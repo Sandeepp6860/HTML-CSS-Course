@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Practice</title>
+    <style>
+      .profiles-container {
+        display: grid;
+        grid-template-columns: 170px 170px 170px;
+        column-gap: 20px;
+      }
+      .profile {
+        display: grid;
+        grid-template-columns: 170px;
+
+        border: 1px solid rgb(228, 212, 212);
+
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+      }
+      .profile-picture {
+        width: 100%;
+        height: 185px;
+        object-fit: cover;
+      }
+      .profile-name {
+        font-family: Arial;
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 0px;
+        margin-top: 8px;
+        padding-left: 10px;
+      }
+      .mutual-friends {
+        margin-top: 5px;
+        font-family: Arial;
+        font-size: 12px;
+        padding-left: 10px;
+      }
+      .add-friend {
+        width: 100px;
+        margin: 0px 0px 10px 10px;
+        background-color: rgb(90, 90, 243);
+        border: none;
+        color: white;
+        font-family: Arial;
+        padding: 10px 10px;
+        border-radius: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="profiles-container">
+      <div class="profile">
+        <img src="./cat.jpg" class="profile-picture" alt="cat" />
+        <p class="profile-name">Oliver</p>
+        <p class="mutual-friends">2 mutual friends</p>
+        <button class="add-friend">Add Friend</button>
+      </div>
+      <div class="profile">
+        <img src="./dog.jpg" class="profile-picture" alt="dog" />
+        <p class="profile-name">Mimi</p>
+        <p class="mutual-friends">4 mutual friends</p>
+        <button class="add-friend">Add Friend</button>
+      </div>
+      <div class="profile">
+        <img src="./tiger.jpg" class="profile-picture" alt="tiger" />
+        <p class="profile-name">Rex</p>
+        <p class="mutual-friends">1 mutual friends</p>
+        <button class="add-friend">Add Friend</button>
+      </div>
+    </div>
+  </body>
+</html>

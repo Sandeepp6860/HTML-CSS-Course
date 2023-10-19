@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display-Basics</title>
+    <style>
+      .about-person {
+        width: 300px;
+        display: inline-block;
+      }
+
+      .first-name,
+      .last-name {
+        font-size: 20px;
+        border-radius: 5px;
+        border: 1px solid grey;
+        padding: 10px 0px 10px 30px;
+        width: 170px;
+      }
+      .email {
+        font-size: 20px;
+        border-radius: 5px;
+        border: 1px solid grey;
+        padding: 10px 0px 10px 30px;
+        width: 375px;
+        display: block;
+        margin-top: 20px;
+      }
+      .sign-up {
+        background-color: rgb(99, 99, 252);
+        margin-top: 20px;
+        border: none;
+        font-size: 15px;
+        color: white;
+        text-align: center;
+        padding: 20px 175px;
+        font-weight: bold;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="about-person">
+      Hello All. This is Sandeep Podduturi. Hope you all are doing well.
+    </p>
+    <button class="yes">Yes</button>
+    <button class="no">No</button>
+
+    <br />
+
+    <input type="text" class="first-name" placeholder="First Name" />
+    <input type="text" class="last-name" placeholder="Last Name" />
+    <input type="text" class="email" placeholder="Email" />
+    <button class="sign-up">Sign Up</button>
+  </body>
+</html>
